@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <head>
+        <title>Cálculo Notas</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <section id="notas">            
+            <div id="parent">
+                <div id="barra"><p>CÁLCULO NOTAS</p></div>
+                <div id="formulario">
+                    <h1>CÁLCULO NOTAS</h1>
+                    <form id="campos">
+                        <table>
+                            <tr>
+                                <td><input type="number" id="valorNota" placeholder="NOTA"/></td>
+                                <td><button type="submit" onclick="document.getElementById('resultado').innerHTML = calculoValorNota(); return false;">CALC. TOTAL</td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" id="valorProd" placeholder="PRODUTOS" /></td>
+                                <td><button type="submit" onclick="document.getElementById('resultado').innerHTML = calculoValorProd(); return false;">CALC. PRODUTOS</td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" id="frete" placeholder="FRETE" /></td>
+                                <td><button type="submit" onclick="document.getElementById('resultado').innerHTML = calculoValorFrete(); return false;">CALC. FRETE</td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" id="seguro" placeholder="SEGURO" /></td>
+                                <td><button type="submit" onclick="document.getElementById('resultado').innerHTML = calculoValorSeguro(); return false;">CALC. SEGURO</td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" id="despAcess" placeholder="DESPESAS ACESSÓRIAS" /></td>
+                                <td><button type="submit" onclick="document.getElementById('resultado').innerHTML = calculoValorDespAcess(); return false;">CALC. DESP. ACESS.</td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" id="desconto" placeholder="DESCONTO" /></td>
+                                <td><button type="submit" onclick="document.getElementById('resultado').innerHTML = calculoValorDesconto(); return false;">CALC. DESCONTO</td>
+                            </tr>
+                            </tr>
+                            <tr>
+                                <td><input type="number" id="pedagio" placeholder="PEDÁGIO" /></td>
+                                <td><button type="submit" onclick="document.getElementById('resultado').innerHTML = calculoValorPedagio(); return false;">CALC. PEDÁGIO</td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" id="ipi" placeholder="IPI" /></td>
+                                <td><button type="submit" onclick="document.getElementById('resultado').innerHTML = calculoValorIPI(); return false;">CALC. IPI</td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" id="ICMSST" placeholder="ICMS-ST" /></td>
+                                <td><button type="submit" onclick="document.getElementById('resultado').innerHTML = calculoValorICMSST(); return false;">CALC. ICMS-ST</td>
+                            </tr>
+                        </table>
+                    </form>
+                    <p><span id="resultado"></span></p>
+                    <button id="reset" onclick="clearInputField()">LIMPAR</button>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

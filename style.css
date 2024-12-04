@@ -1,0 +1,196 @@
+/* Estilos comuns a todas as páginas */
+@font-face {
+  font-family: 'Classic Console Neue';
+  src: url('clacon2.ttf') format('truetype');
+}
+
+* {
+  color: #20C20E;
+  background-color: black;
+  border-color: #20C20E;
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family: 'Classic Console Neue';
+  font-size: 1em;
+}
+
+*::selection {
+  color: black;
+  background: white;
+}
+
+div#parent {
+  width: 100%;
+  display: flex;
+}
+
+div#barra {
+  width: 30%;
+  margin: 0 auto;
+  float: left;
+}
+
+div#formulario {
+  width: 70%;
+  margin: 0 auto;
+  float: right;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+[id^=resultado],
+[id^=cifrao],
+[id^=label] {
+  font-size: 1.2em;
+}
+
+input::placeholder {
+  text-align: center;
+  font-weight: 1100;
+}
+
+input:focus {
+  outline: 2px solid #20C20E;
+}
+
+body {
+    text-align: center;
+}
+
+section {
+    margin-top: 3em;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+form + table {
+  margin-top: 1em;
+}
+
+tr td button,
+ul li button {
+  width: 100%;
+}
+
+#barra button,
+#barra ul li {
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+}
+
+.red {
+  color: red;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* Fim de estilos comuns */
+/* Estilos referentes a "Cálculo Notas" (id = "notas") */
+#notas tr td:first-of-type {
+    text-align: right;
+    padding-right: 0.3em;
+    width: 50%;
+}
+
+#notas tr td:last-of-type {
+  text-align: left;
+  padding-left: 0.3em;
+  width: 50%;
+}
+
+
+/* Estilos referentes a "Material e Mão de Obra (id="mat-obra")*/
+#resultadoMatObra td:first-of-type {
+  text-align: right;
+}
+
+#resultadoMatObra td:last-of-type {
+  text-align: right;
+}
+
+td.cifrao {
+  max-width: 10%;
+  padding-left: 0.5em;
+  padding-right: 1em;
+}
+
+#mat-obra form + button {
+  margin-top: 1em;
+}
+
+#mat-obra div > table {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+/* Fim de estilos de "Material e Mão de Obra (id="mat-obra")*/
+/* Estilos de Cálculo IRPF */
+#ir tr td button {
+  display: block;
+  height: 5em;
+  width: 100%;
+  border: none;
+}
+
+#ir tr td[rowspan] {
+  border: 2px solid #20C20E;
+}
+
+#ir form,
+#ir table,
+#ir td {
+  margin: auto;  
+  width: 25em;
+  text-align: center;
+}
+
+#ir input {
+  margin: auto;  
+  width: 15em;
+  text-align: center;
+}
+
+/* Dados */
+#dados table {  
+  border-collapse: collapse;
+}
+
+#dados table td {
+  border: solid 1px #20C20E;
+  padding: 0 0.5em 0 0.5em;
+}
+
+#dados table thead {
+  text-align: center;
+}
+
+#dados table tbody {
+  text-align: left;
+}

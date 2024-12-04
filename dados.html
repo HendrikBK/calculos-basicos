@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DADOS</title>
+        <script src="scriptServico.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <section id="dados">
+            <div id="parent">
+                <div id="barra">
+                    <ul>
+                        <li><a href="calculo-ir.html"><button>CÁLCULO IRPF</button></a></li>
+                        <li><a href="calculo-mat-obra.html"><button><b>CÁLCULO MATERIAL E MÃO DE OBRA</b></button></a></li>
+                        <li><a href="calculo-notas.html"><button>CÁLCULO NOTAS</button></a></li>
+                        <li>...</li>
+                        <li><button>DADOS</button></li>
+                </div>
+                <div id="formulario">
+                    <h1>DADOS</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td colspan="3">IRPF</td>
+                            </tr>
+                            <tr>
+                                <td>RECEITA</td>
+                                <td>ALÍQUOTA</td>
+                                <td>DEDUÇÃO</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ATÉ R$ 2.259,20</td>
+                                <td>ISENTO</td>                                
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>DE R$ 2.259,20 A R$ 2.2826,65</td>
+                                <td>7,5%</td>                                
+                                <td>R$ 169,44</td>
+                            </tr>
+                            <tr>
+                                <td>DE R$ 2.826,66 ATÉ R$ 3.751,05</td>
+                                <td>15%</td>
+                                <td>R$ 381,44</td>
+                            </tr>
+                            <tr>
+                                <td>DE R$ 3.751,06 ATÉ 4.664,68</td>
+                                <td>22,5%</td>
+                                <td>R$ 662,77</td>
+                            </tr>
+                            <tr>
+                                <td>ACIMA DE R$ 4.664,84</td>
+                                <td>27,5%</td>
+                                <td>R$ 896,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>TRIBUTO</td>
+                                <td>ALÍQUOTA</td>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>                                
+                                <td>INSS</td>
+                                <td>11%</td>                                
+                            </tr>
+                            <tr>
+                                <td>ISSQN</td>
+                                <td>5%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </body>

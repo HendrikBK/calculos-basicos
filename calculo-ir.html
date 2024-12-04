@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CÁLCULO IR</title>
+        <script src="scriptIR.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <section id="ir">            
+            <div id="parent">
+                <div id="barra">
+                    <ul>
+                        <li><button><b>CÁLCULO IRPF</b></button></li>
+                        <li><a href="calculo-mat-obra.html"><button>CÁLCULO MATERIAL E MÃO DE OBRA</button></a></li>
+                        <li><a href="calculo-notas.html"><button>CÁLCULO NOTAS</button></a></li>
+                        <li>...</li>
+                        <li><a href="dados.html"><button>DADOS</button></a></li>
+                    </ul>
+                </div>
+                <div id="formulario">
+                    <h1>CÁLCULO CARNÊ-LEÃO</h1>
+                    <form id="campos">
+                        <table>
+                            <tr>
+                                <td><input type="number" id="valorReceita" placeholder="RECEITAS"/></td>
+                                <td rowspan="3"><button id="calcular" onclick="document.getElementById('resultado').innerHTML = valorIRPF(); return false">CALCULAR</button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" id="valorDespesa" placeholder="DESPESAS DEDUTÍVEIS" /></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" id="frete" placeholder="DESPESAS NÃO DEDUTÍVEIS" /></td>
+                            </tr>
+                        </table>
+                    </form>
+                    <p><span id="resultado"></span></p>
+                    <button id="reset" onclick="clearInputField()">LIMPAR</button>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

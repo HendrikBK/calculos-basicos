@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cálculo Material e Mão de obra</title>
+        <script src="scriptServico.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <section id="mat-obra">
+            <div id="parent">
+                <div id="barra">
+                    <ul>
+                        <li><a href="calculo-ir.html"><button>CÁLCULO IRPF</button></a></li>
+                        <li><button><b>CÁLCULO MATERIAL E MÃO DE OBRA</b></button></li>
+                        <li><a href="calculo-notas.html"><button>CÁLCULO NOTAS</button></a></li>
+                        <li>...</li>
+                        <li><a href="dados.html"><button>DADOS</button></a></li>
+                    </ul>
+                </div>
+                <div id="formulario">
+                    <h1>CÁLCULO MATERIAL E MÃO DE OBRA</h1>
+                    <form id="campos">
+                        <input type="number" id="valorServico" placeholder="SERVIÇO"/>
+                            <button type="submit" onclick="
+                            document.getElementById('label1').innerHTML = termos()[4];
+                            document.getElementById('resultado1').innerHTML = valores()[4];
+                            document.getElementById('label2').innerHTML = termos()[5];
+                            document.getElementById('resultado2').innerHTML = valores()[5];
+                            document.getElementById('labelDed').innerHTML = termos()[1];
+                            document.getElementById('resultadoDed').innerHTML = valores()[1];
+                            document.getElementById('label3').innerHTML = termos()[2];
+                            document.getElementById('resultado3').innerHTML = valores()[2];
+                            document.getElementById('label-issqn').innerHTML = termos()[3];
+                            document.getElementById('resultado-issqn').innerHTML = valores()[3];
+                            document.getElementById('label5').innerHTML = termos()[6];
+                            document.getElementById('resultado-liquido').innerHTML = valores()[6];
+                            cifraoElem();
+                            mostrar();
+                            return false">SERVIÇO</button>
+                    </form>
+                    <button id="reset" onclick="clearInputField()">LIMPAR</button>
+                    <div id="rew" style="display:none">
+                    <table class="resultados" id="resultadoMatObra">
+                        <tr>
+                            <td class="label" id="label1"></td>
+                            <td class="cifrao" id="cifrao1"></td>
+                            <td class="resultado" id="resultado1"></td>
+                        </tr>
+                        <tr>
+                            <td class="label" id="label2"></td>
+                            <td class="cifrao" id="cifrao2"></td>
+                            <td class="resultado" id="resultado2"></td>
+                        </tr>
+                        <tr>
+                            <td class="label" id="labelDed"></td>
+                            <td class="cifrao" id="cifraoDed"></td>
+                            <td class="resultado" id="resultadoDed"></td>
+                        </tr>
+                        <tr>
+                            <td class="label" id="label3"></td>                            
+                            <td class="cifrao" id="cifrao3"></td>
+                            <td class="resultado" id="resultado3"></td>
+                        </tr>
+                        <tr>
+                            <td class="label" id="label-issqn"></td>                            
+                            <td class="cifrao" id="cifrao-issqn"></td>
+                            <td class="resultado" id="resultado-issqn"></td>
+                        </tr>
+                        <tr>
+                            <td class="label" id="label5"></td>                            
+                            <td class="cifrao" id="cifrao-issqn"></td>
+                            <td class="resultado" id="resultado-liquido"></td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
