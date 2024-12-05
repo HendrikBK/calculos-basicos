@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Classic Console Neue';
+    src: url('clacon2.ttf') format('truetype');
+}
+
+* {
+    background-color: black;
+    border-color: #20C20E;
+    color: #20C20E;
+    font-family: 'Classic Console Neue';
+}
+
+*::selection {
+    background: white;
+    color: black;
+}
+
+input:focus {
+    outline: 2px solid #20C20E;
+}
+
+#ir tr td[rowspan] {
+    border: 2px solid #20C20E;
+  }
+
+  #dados table td {
+    border: solid 1px #20C20E;
+  }

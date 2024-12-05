@@ -1,21 +1,6 @@
 /* Estilos comuns a todas as páginas */
-@font-face {
-  font-family: 'Classic Console Neue';
-  src: url('clacon2.ttf') format('truetype');
-}
-
 * {
-  color: #20C20E;
-  background-color: black;
-  border-color: #20C20E;
-  /* font-family: 'Courier New', Courier, monospace; */
-  font-family: 'Classic Console Neue';
   font-size: 1em;
-}
-
-*::selection {
-  color: black;
-  background: white;
 }
 
 div#parent {
@@ -49,10 +34,6 @@ h1 {
 input::placeholder {
   text-align: center;
   font-weight: 1100;
-}
-
-input:focus {
-  outline: 2px solid #20C20E;
 }
 
 body {
@@ -160,10 +141,6 @@ td.cifrao {
   border: none;
 }
 
-#ir tr td[rowspan] {
-  border: 2px solid #20C20E;
-}
-
 #ir form,
 #ir table,
 #ir td {
@@ -184,7 +161,6 @@ td.cifrao {
 }
 
 #dados table td {
-  border: solid 1px #20C20E;
   padding: 0 0.5em 0 0.5em;
 }
 
