@@ -1,0 +1,27 @@
+body {
+    background-color: teal;
+    font-family: "MS Sans Serif";
+}
+
+#ir tr td:second-of-type {
+    border: none;
+}
+
+
+
+button,
+td[rowspan] button#calcular {
+    background-color: #c0c0c0;;
+    border-bottom: solid black 2px;
+    border-right: solid black 2px;
+    border-left: solid white 1px;
+    border-top: solid white 1px;
+}
+
+button:active,
+td[rowspan] button#calcular:active {
+    border-bottom: solid white 1px;
+    border-right: solid white 1px;
+    border-left: solid black 2px;
+    border-top: solid black 2px;
+}
