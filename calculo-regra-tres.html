@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cálculo Regra de Três</title>
+        <script src="scriptRegraTres.js"></script>
+        <link rel="stylesheet" type="text/css" href="style-base.css" />
+        <link rel="stylesheet" type="text/css" href="style-win98.css" />
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <section id="regra-tres">            
+            <div id="parent">
+                <div id="barra">
+                    <ul>
+                        <li><button onclick="location.href='calculo-ir.html';">CÁLCULO IRPF</button></li>
+                        <li><button onclick="location.href='calculo-mat-obra.html';">CÁLCULO MATERIAL E MÃO DE OBRA</button></li>
+                        <li><button onclick="location.href='calculo-notas.html';">CÁLCULO MATERIAL NOTAS</button></li>
+                        <li><button><b>CÁLCULO REGRA DE TRÊS</b></button></li>
+                        <li>...</li>
+                        <li><button onclick="location.href='dados.html';">DADOS</button></li>
+                    </ul>
+                </div>
+                <div id="formulario">
+                    <h1>CÁLCULO REGRA DE TRÊS</h1>
+                    <form id="campos">
+                        <table>
+                            <tr>
+                                <td><input type="number" id="valorTotal-A" placeholder="VALOR TOTAL A"/></td>
+                                <td><input type="number" id="valorTotal-B" placeholder="VALOR TOTAL B"/></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" id="valor-A-1" placeholder="VALOR a-1"/></td>
+                                <td><span class="resultado" id="resultado-1"></span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" id="valor-A-2" placeholder="VALOR a-2"/></td>
+                                <td><span class="resultado" id="resultado-2"></span></td>
+                            </tr>
+                        </table>
+                        <button type="submit" onclick="
+                            document.getElementById('resultado-1').innerHTML = 'R$ ' + calculo()[0].toFixed(2).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+                            document.getElementById('resultado-2').innerHTML = 'R$ ' + calculo()[1].toFixed(2).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+                            cifraoElem();
+                            return false;">CALCULAR</button>
+                    </form>
+                    <button id="reset" onclick="clearInputField()">LIMPAR</button>
+                    <p><span class="resultado" id="resultado-1"></span></p>
+                    <p><span class="resultado" id="resultado-2"></span></p>                   
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
