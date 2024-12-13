@@ -18,8 +18,8 @@ function calculo() {
         let resultados = [resultado_b_1, resultado_b_2];
         return resultados;
     } else {
-        let resultado_b_1 = (valores[2] / valores[0]) * valores[1];
-        let resultado_b_2 = (valores[3] / valores[0]) * valores[1];
+        let resultado_b_1 = (valores[2] * valores[1]) / valores[0];
+        let resultado_b_2 = (valores[3] * valores[1]) / valores[0];
         let resultados = [resultado_b_1, resultado_b_2];
         return resultados;
         }
