@@ -38,13 +38,13 @@ function valores() {
 
 function termos() {
     let termos = [
-        "VALOR BRUTO:", // 0
-        "DEDUÇÃO:",     // 1
-        "INSS:",        // 2
-        "ISSQN:",       // 3
-        "MATERIAL:",    // 4
-        "MÃO DE OBRA:", // 5
-        "LIQUÍDO:"      // 6 
+        "VALOR BRUTO:  R$ ", // 0
+        "DEDUÇÃO:  R$ ",     // 1
+        "INSS:  R$ ",        // 2
+        "ISSQN:  R$ ",       // 3
+        "MATERIAL:  R$ ",    // 4
+        "MÃO DE OBRA:  R$ ", // 5
+        "LIQUÍDO:  R$ "      // 6 
     ]
     return termos;
 }
